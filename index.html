@@ -36,9 +36,9 @@
         document.addEventListener("DOMContentLoaded", (event) => {
         gsap.registerPlugin(ScrollTrigger)
         
-        let tl = gsap
-        .timeline({
-            scrollTrigger: {
+        let tl = gsap //Criando timeline GSAP
+        .timeline({  
+            scrollTrigger: {  //Definindo o Gatilho (travando a segunda sessão em 1500px)
             trigger: ".section_02",
             start: "top top",
             scrub: 2,
@@ -46,7 +46,7 @@
             end: "bottom+=1500px"
             }
         })
-        .to(".text_01", { opacity: 1 })
+        .to(".text_01", { opacity: 1 }) //Animando os Textos
         .to(".text_01", { opacity: 0 })
         .to(".text_02", { opacity: 1 })
         .to(".text_02", { opacity: 0 })
