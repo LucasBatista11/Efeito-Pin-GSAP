@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    /*outline: 1px solid red; /* Remova isso após a depuração */
+    font-family: "Noto Sans", "Outfit", Montserrat, Inter;
+}
+
+:root{
+    --darkBlue: #010B26;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h1, p{
+    margin: 0;
+}
+
+.section_01, .section_03{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section_01 h1{
+    font-size: 4rem;
+}
+
+.section_03 h1{
+    font-size: 4rem;
+}
+
+.section_02{
+    height: 100vh;
+    background-color: var(--darkBlue);
+    position: relative;
+}
+
+.section_02 h1{
+    color: white;
+    font-size: 4rem;
+}
+
+.position{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_01, .text_02, .text_03{
+    opacity: 0;
+}
